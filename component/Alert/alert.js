@@ -18,12 +18,19 @@ class alert extends Component {
     }
 
     render() {
+       
         return (
-            <Modal isVisible={this.state.visible} animationIn={"zoomIn"} backdropOpacity={0} animationOut={"zoomOut"} animationInTiming={0} animationOutTiming={0}
+            <Modal
+                isVisible={this.state.visible}
+                animationIn={"zoomIn"}
+                backdropOpacity={0}
+                animationOut={"zoomOut"}
+                animationInTiming={0}
+                animationOutTiming={0}
                 onBackButtonPress={() => {
-                    this.props.onClose();
+                    this.setState({ visible: !this.state.visible });
                 }}
-                >
+            >
                 <View
                     style={{
                         justifyContent: "center", alignItems: "center"
@@ -57,10 +64,10 @@ class alert extends Component {
                                     justifyContent: "center", alignItems: "center"
                                 }}
                                 onPress={() => {
-                                    this.props.onClose();
+                                    this.setState({ visible: !this.state.visible });
                                 }}
                             >
-                                <Text style={{ fontFamily: "sans", fontSize: wp(3.8), color: "#fff" }}>بستن</Text>
+                                <Text style={{ fontFamily: "sans", fontSize: wp(3.8), color: "#fff" }}>{this.props.closeText}</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
