@@ -1,11 +1,16 @@
 {
   "name": "react-native-android-alert-mjr",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple Alert",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MohammadReza.Mjr",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mreza77/react-native-android-alert-mjr"
+  },
+  "homepage": "https://github.com/mreza77/react-native-android-alert-mjr"
 }
