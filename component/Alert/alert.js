@@ -28,7 +28,7 @@ class alert extends Component {
                 animationInTiming={0}
                 animationOutTiming={0}
                 onBackButtonPress={() => {
-                    this.setState({ visible: !this.state.visible });
+                    this.props.onClose();
                 }}
             >
                 <View
@@ -64,7 +64,7 @@ class alert extends Component {
                                     justifyContent: "center", alignItems: "center"
                                 }}
                                 onPress={() => {
-                                    this.setState({ visible: !this.state.visible });
+                                    this.props.onClose();
                                 }}
                             >
                                 <Text style={{ fontFamily: "sans", fontSize: wp(3.8), color: "#fff" }}>{this.props.closeText}</Text>

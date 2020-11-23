@@ -29,3 +29,4 @@ render() {
 | isVisible  |bool    | REQUIRED   |  Show the Alert? |
 | text  | string  |  REQUIRED | text in center Alert Component  |
 |  closeText | string  | REQUIRED  |  text on close button |
+|  onClose | func  | () => isVisible(bool)  |  close modal(!isVisible => close modal) |
