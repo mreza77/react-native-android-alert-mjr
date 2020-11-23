@@ -15,8 +15,12 @@ render() {
         return (
             <View>
                 <Alert
-                    isVisible={"true"}
-                    text={"Hello World"}
+                    isVisible={this.state.visiblealert}
+                    text={this.state.Alert}
+                    closeText={"close"}
+                    onClose={() => {
+                        this.setState({ visiblealert: false })
+                    }}
                 />
             </View>
         );
