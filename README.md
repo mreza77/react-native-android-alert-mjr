@@ -1,10 +1,16 @@
 # react-native-android-alert-mjr
 
 **this is a library of alert components.**
-**you can use it by installing it on your native project.**
+**you can use it by installing it on your React-Native project.**
 
 # Installation 
-`npm i react-native-android-alert-mjr`
+1. `npm i react-native-android-alert-mjr` 
+
+2. `npm i react-native-responsive-screen`
+
+3.`npm i react-native-modal`
+
+install carefully above package on your react-native project and use,it easily , and simple :tw-1f385:
 
 # Usage
    ####  Default Alert
