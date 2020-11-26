@@ -8,12 +8,12 @@
 
 2. `npm i react-native-responsive-screen`
 
-3.`npm i react-native-modal`
+3. `npm i react-native-modal`
 
 install carefully above package on your react-native project and use,it easily , and simple :tw-1f385:
 
 # Usage
-   ####  Default Alert
+#####   Default Alert
 ```javascript
 import Alert from 'react-native-android-alert-mjr';
  
